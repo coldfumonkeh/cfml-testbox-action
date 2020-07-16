@@ -1,7 +1,7 @@
 # action.yml
 name: 'CFML TestBox Test Runner'
 author: 'Matt Gifford aka coldfumonkeh'
-description: 'Run CFML unit tests using TestBox'
+description: 'Run CFML unit tests using CommandBox and TestBox'
 inputs:
   cfml-engine:  # id of input
     description: 'The CFML engine to test against'
