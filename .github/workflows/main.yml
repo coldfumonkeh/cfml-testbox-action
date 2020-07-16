@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         name: A job to test some code
         steps:
-        - script: |
+        - run: |
             echo Starting the build
             curl --location -o /tmp/box.zip https://www.ortussolutions.com/parent/download/commandbox/type/bin
             unzip /tmp/box.zip -d /tmp/
