@@ -1,4 +1,4 @@
-# CFLM TestBox Test Runner action
+# CFML TestBox Test Runner action
 
 This action will run a CommandBox server on the CFML engine of your choice and run TestBox on that server.
 
