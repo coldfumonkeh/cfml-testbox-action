@@ -1,28 +1,10 @@
 on: [push]
 
 jobs:
-    hello_world_job:
-        runs-on: ubuntu-latest
-        name: A job to say hello
-        steps:
-        # To use this repository's private action,
-        # you must check out the repository
-        - name: Checkout
-            uses: actions/checkout@v2
-        - name: Hello world action step
-            uses: ./ # Uses an action in the root directory
-            id: hello
-            with:
-            who-to-greet: 'Mona the Octocat'
-        # Use the output from the `hello` step
-        - name: Get the output time
-            run: echo "The time was ${{ steps.hello.outputs.time }}"
-    testing_job:
+    job:
         runs-on: ubuntu-latest
         name: A job to test some code
         steps:
-        - name: Checkout
-            uses: actions/checkout@v2
         - script: |
             echo Starting the build
             curl --location -o /tmp/box.zip https://www.ortussolutions.com/parent/download/commandbox/type/bin
@@ -32,10 +14,3 @@ jobs:
             /tmp/box server start cfengine=lucee@4
             mkdir /tmp/results/
             /tmp/box testbox run outputFile=testbox-lucee4.xml reporter=junit
-        - task: PublishTestResults@2
-            inputs:
-              testResultsFormat: 'JUnit'
-              testResultsFiles: '**/testbox-*.xml' 
-              testRunTitle: TestBox Tests
-              failTaskOnFailedTests: true
-            displayName: 'TestBox Results'
