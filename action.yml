@@ -1,5 +1,6 @@
 # action.yml
 name: 'CFML TestBox Test Runner'
+author: 'Matt Gifford aka coldfumonkeh'
 description: 'Run CFML unit tests using TestBox'
 inputs:
   cfml-engine:  # id of input
@@ -11,3 +12,6 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.cfml-engine }}
+branding:
+  icon: 'award'
+  color: 'green'
