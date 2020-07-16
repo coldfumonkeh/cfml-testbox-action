@@ -1,0 +1,1779 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Optional</title>
+	<meta name="keywords" content="testbox.system.modules.cbstreams.models.concurrent.Callable interface">
+	<!-- common assets -->
+	
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>TestBox v4.1.0</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+				
+
+				
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+
+			  	
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?testbox/system/modules/cbstreams/models/Optional.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: testbox.system.modules.cbstreams.models"><span class="label label-success">testbox.system.modules.cbstreams.models</span></a>
+</div>
+
+<h2>
+
+
+Class
+
+ Optional</h2>
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+	
+		
+		
+			
+		
+	
+	
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">lucee.Component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">testbox.system.modules.cbstreams.models.Optional
+</pre>
+
+
+
+	
+	
+
+
+
+
+
+
+
+<div id="class-hint">
+	<p>A container object which may or may not contain a non-null value. If a value is present, isPresent() will return true and get() will return the value.
+Additional methods that depend on the presence or absence of a contained value are provided, such as orElse() (return a default value if value not present) and ifPresent() (execute a block of code if the value is present).
+See https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				synchronized
+				
+				: false
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				accessors
+				
+				: true
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				persistent
+				
+				: false
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+		
+		
+	</div>
+</div>
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#jOptional()">jOptional</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Java Builder we represent.
+			
+			<br><br>
+			<ul>
+			
+				
+			
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			
+				
+			
+				
+			
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+
+
+	
+	
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="Optional.html#init()">init</A></strong>([any optional])
+				<br>
+				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Construct a CFML Optional out of the Java Optional.
+				
+			</td>
+		</tr>
+	</table>
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#$or()">$or</A></strong>(any supplier)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a value is present, returns an Optional describing the value, otherwise returns an Optional produced by the supplying function.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#$or()">$or</A></strong>(any supplier)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a value is present, returns an Optional describing the value, otherwise returns an Optional produced by the supplying function.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#empty()">empty</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build an empty optional out.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#filter()">filter</A></strong>(any predicate)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a value is present, and the value matches the given predicate, return an Optional describing the value, otherwise return an empty Optional.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#get()">get</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a value is present in this Optional, returns the value, otherwise throws NoSuchElementException.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#getJOptional()">getJOptional</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#getNativeType()">getNativeType</A></strong>([any results])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return a native CF type from incoming Java type.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#getValueFromOptional()">getValueFromOptional</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Verify if the optional is of a certain primitive type and call the appropriate function to return it's value.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#hashCode()">hashCode</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the hash code value of the present value, if any, or 0 (zero) if no value is present.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#ifPresent()">ifPresent</A></strong>(any consumer)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a value is present, invoke the specified consumer with the value, otherwise do nothing.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#ifPresentOrElse()">ifPresentOrElse</A></strong>(any consumer, any runnable)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a value is present, performs the given action with the value, otherwise performs the given empty-based action.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#isEmpty()">isEmpty</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if there is no value present, otherwise false.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#isEqual()">isEqual</A></strong>(any obj)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates whether some other object is "equal to" this Optional.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#isPresent()">isPresent</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if there is a value present, otherwise false.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#map()">map</A></strong>(any mapper)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a value is present, apply the provided mapping function to it, and if the result is non-null, return an Optional describing the result.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#of()">of</A></strong>(any value)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an Optional with the specified present non-null value.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#ofNullable()">ofNullable</A></strong>([any value])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an Optional describing the specified value, if non-null, otherwise returns an empty Optional.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#orElse()">orElse</A></strong>(any other)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the value if present, otherwise return other.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#orElseGet()">orElseGet</A></strong>(any other)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the value if present, otherwise invoke other and return the result of that invocation.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#orElseRun()">orElseRun</A></strong>(any runnable)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Runs the `runnable` closure/lambda if the value is not set and the same optional instance is returned.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#orElseThrow()">orElseThrow</A></strong>([any type='NoSuchElementException'], [any message=''])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a value is present, returns the value, otherwise throws NoSuchElementException.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#setJOptional()">setJOptional</A></strong>(any jOptional)
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="Optional.html#toString()">toString</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a non-empty string representation of this Optional suitable for debugging.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	
+
+	
+
+	&nbsp;
+	<a name="methods_inherited_from_class_lucee.Component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>lucee.Component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+				
+				
+
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([any optional])</kbd>
+
+	<br><br>
+
+	
+	<p>Construct a CFML Optional out of the Java Optional.
+If no optional passed, we will generate an empty one.</p>
+	
+
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>optional</code> - A Java optional to initialize this CFML Optional with.</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		
+		<a name="jOptional()"><!-- --></a>
+		<h3>jOptional</h3>
+
+		<kbd>
+			property any
+			<strong>jOptional</strong>
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The Java Builder we represent</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			
+		
+			
+			<dd><code>access</code> - public</dd>
+			
+		
+			
+			<dd><code>required</code> - false</dd>
+			
+		
+			
+		
+			
+			<dd><code>returntype</code> - any</dd>
+			
+		
+			
+		
+			
+		
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		
+		</dl>
+
+		<hr>
+	
+
+
+
+
+
+
+
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	
+	<a name="$or()"><!-- --></a>
+	<h3>
+		$or
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>$or</strong>(any supplier)</kbd>
+
+	<br><br>
+
+	
+		<p>If a value is present, returns an Optional describing the value, otherwise returns an Optional produced by the supplying function.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>supplier</code> - A closure/lambda that must return a cbOptional</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="$or()"><!-- --></a>
+	<h3>
+		$or
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>$or</strong>(any supplier)</kbd>
+
+	<br><br>
+
+	
+		<p>If a value is present, returns an Optional describing the value, otherwise returns an Optional produced by the supplying function.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>supplier</code> - A closure/lambda that must return a cbOptional</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="empty()"><!-- --></a>
+	<h3>
+		empty
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>empty</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Build an empty optional out.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="filter()"><!-- --></a>
+	<h3>
+		filter
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>filter</strong>(any predicate)</kbd>
+
+	<br><br>
+
+	
+		<p>If a value is present, and the value matches the given predicate, return an Optional describing the value, otherwise return an empty Optional.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>predicate</code> - a predicate to apply to the value, if present</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>an Optional describing the value of this Optional if a value is present and the value matches the given predicate, otherwise an empty Optional</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="get()"><!-- --></a>
+	<h3>
+		get
+		
+	</h3>
+
+	<kbd>public any <strong>get</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>If a value is present in this Optional, returns the value, otherwise throws NoSuchElementException.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getJOptional()"><!-- --></a>
+	<h3>
+		getJOptional
+		
+	</h3>
+
+	<kbd>public string <strong>getJOptional</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getNativeType()"><!-- --></a>
+	<h3>
+		getNativeType
+		
+	</h3>
+
+	<kbd>public any <strong>getNativeType</strong>([any results])</kbd>
+
+	<br><br>
+
+	
+		<p>Return a native CF type from incoming Java type. This is our Java to CF Bridge. Expand as needed</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>results</code> - The native Java return</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getValueFromOptional()"><!-- --></a>
+	<h3>
+		getValueFromOptional
+		
+	</h3>
+
+	<kbd>private any <strong>getValueFromOptional</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Verify if the optional is of a certain primitive type and call the appropriate function to return it's value.
+If not, it reverts to a default typedless Optional.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="hashCode()"><!-- --></a>
+	<h3>
+		hashCode
+		
+	</h3>
+
+	<kbd>public numeric <strong>hashCode</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns the hash code value of the present value, if any, or 0 (zero) if no value is present.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="ifPresent()"><!-- --></a>
+	<h3>
+		ifPresent
+		
+	</h3>
+
+	<kbd>public void <strong>ifPresent</strong>(any consumer)</kbd>
+
+	<br><br>
+
+	
+		<p>If a value is present, invoke the specified consumer with the value, otherwise do nothing.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>consumer</code> - block to be executed if a value is present</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="ifPresentOrElse()"><!-- --></a>
+	<h3>
+		ifPresentOrElse
+		
+	</h3>
+
+	<kbd>public void <strong>ifPresentOrElse</strong>(any consumer, any runnable)</kbd>
+
+	<br><br>
+
+	
+		<p>If a value is present, performs the given action with the value, otherwise performs the given empty-based action.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>consumer</code> - The closure/lambda to execute if the value is present</dd>
+		
+		<dd><code>runnable</code> - The closure/lambda to execute if the value is NOT present</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="isEmpty()"><!-- --></a>
+	<h3>
+		isEmpty
+		
+	</h3>
+
+	<kbd>public boolean <strong>isEmpty</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Return true if there is no value present, otherwise false</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="isEqual()"><!-- --></a>
+	<h3>
+		isEqual
+		
+	</h3>
+
+	<kbd>public boolean <strong>isEqual</strong>(any obj)</kbd>
+
+	<br><br>
+
+	
+		<p>Indicates whether some other object is "equal to" this Optional.
+Please note that the incoming <source>obj</source> must also be an Optional</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>obj</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="isPresent()"><!-- --></a>
+	<h3>
+		isPresent
+		
+	</h3>
+
+	<kbd>public boolean <strong>isPresent</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Return true if there is a value present, otherwise false.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="map()"><!-- --></a>
+	<h3>
+		map
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>map</strong>(any mapper)</kbd>
+
+	<br><br>
+
+	
+		<p>If a value is present, apply the provided mapping function to it, and if the result is non-null, return an Optional describing the result. Otherwise return an empty Optional.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mapper</code> - a mapping function to apply to the value, if present</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>an Optional describing the result of applying a mapping function to the value of this Optional, if a value is present, otherwise an empty Optional</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="of()"><!-- --></a>
+	<h3>
+		of
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>of</strong>(any value)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an Optional with the specified present non-null value.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>value</code> - The value to be present, which must be NON NULL</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>an Optional with the value present</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="ofNullable()"><!-- --></a>
+	<h3>
+		ofNullable
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>ofNullable</strong>([any value])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an Optional describing the specified value, if non-null, otherwise returns an empty Optional.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>value</code> - the possibly-null value to describe</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>an Optional with a present value if the specified value is non-null, otherwise an empty Optional</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="orElse()"><!-- --></a>
+	<h3>
+		orElse
+		
+	</h3>
+
+	<kbd>public any <strong>orElse</strong>(any other)</kbd>
+
+	<br><br>
+
+	
+		<p>Return the value if present, otherwise return other.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>other</code> - the value to be returned if there is no value present, may be null</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>the value, if present, otherwise other</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="orElseGet()"><!-- --></a>
+	<h3>
+		orElseGet
+		
+	</h3>
+
+	<kbd>public any <strong>orElseGet</strong>(any other)</kbd>
+
+	<br><br>
+
+	
+		<p>Return the value if present, otherwise invoke other and return the result of that invocation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>other</code> - a Supplier lambda or closure whose result is returned if no value is present</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>the value if present otherwise the result of other.get()</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="orElseRun()"><!-- --></a>
+	<h3>
+		orElseRun
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>orElseRun</strong>(any runnable)</kbd>
+
+	<br><br>
+
+	
+		<p>Runs the `runnable` closure/lambda if the value is not set and the same optional instance is returned.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>runnable</code> - a lambda or closure that will run</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>the same optional instance</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="orElseThrow()"><!-- --></a>
+	<h3>
+		orElseThrow
+		
+	</h3>
+
+	<kbd>public any <strong>orElseThrow</strong>([any type='NoSuchElementException'], [any message=''])</kbd>
+
+	<br><br>
+
+	
+		<p>If a value is present, returns the value, otherwise throws NoSuchElementException.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>type</code> - The type of the exception to throw or defaults to NoSuchElementException,</dd>
+		
+		<dd><code>message</code> - The message of the exception, defaults to empty string</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="setJOptional()"><!-- --></a>
+	<h3>
+		setJOptional
+		
+	</h3>
+
+	<kbd>public any <strong>setJOptional</strong>(any jOptional)</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>jOptional</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="toString()"><!-- --></a>
+	<h3>
+		toString
+		
+	</h3>
+
+	<kbd>public string <strong>toString</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a non-empty string representation of this Optional suitable for debugging.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+
+
+
+</body>
+</html>
+

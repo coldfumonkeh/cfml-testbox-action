@@ -1,0 +1,3615 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Stream</title>
+	<meta name="keywords" content="testbox.system.modules.cbstreams.models.concurrent.Callable interface">
+	<!-- common assets -->
+	
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="../../../../../bootstrap/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href="../../../../../stylesheet.css">
+	
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,700,700italic|Ubuntu+Mono' rel='stylesheet' type='text/css' />
+	
+<script src="../../../../../bootstrap/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="../../../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function() {
+	// Global Tool Tip Settings
+	$( '[title]' ).tooltip({
+		 animation: 'slide',
+		 delay: { show: 250, hide: 250 }
+	});
+});
+</script>
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../../../../../highlighter/styles/shCoreDefault.css">
+	<script src="../../../../../highlighter/scripts/shCore.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushColdFusion.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushXml.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushSql.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJScript.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushJava.js"></script>
+	<script src="../../../../../highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body class="withNavbar">
+
+
+
+
+
+
+<!-- ========= START OF NAVBAR ======= -->
+<a name="navbar_top"></a>
+<a href="#skip-navbar_top" title="skip navigation links"></a>	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+    
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#class-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><strong>TestBox v4.1.0</strong></a>
+		</div>
+
+	    <div class="collapse navbar-collapse" id="class-navigation">
+	    	<ul class="nav navbar-nav">
+				
+					
+					<li><a href="../../../../../overview-summary.html"><i class="glyphicon glyphicon-plane"></i> overview</a></li>
+					
+				
+
+				
+					<li><a href="package-summary.html"><i class="glyphicon glyphicon-folder-open"></i> &nbsp;package</a></li>
+				
+
+			  	
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i> class <b class="caret"></b></a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#class">Class Definition</a></li>
+							<li><a href="#constructor_summary">Constructor Summary</a></li>
+							<li><a href="#constructor_detail">Constructor Detail</a></li>
+							<li><a href="#inherited_methods">Inherited Methods</a></li>
+							<li><a href="#method_summary">Method Summary</a></li>
+							<li><a href="#method_detail">Method Detail</a></li>
+							<li><a href="#property_summary">Property Summary</a></li>
+							<li><a href="#property_detail">Property Detail</a></li>
+							
+						</ul>
+					</li>
+				
+	      	</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../../../../../index.html?testbox/system/modules/cbstreams/models/Stream.html" target="_top">
+					<i class="glyphicon glyphicon-fullscreen"></i> Frames
+					</a>
+				</li>
+			</ul>
+	    </div>
+
+	</div>
+</nav>	
+
+<a name="skip-navbar_top"></a>
+<!-- ========= END OF NAVBAR ========= -->
+
+<!-- ======== start of class data ======== -->
+<a name="class"><!-- --></a>
+
+<!-- Package -->
+<div class="pull-right">
+	<a href="package-summary.html" title="Package: testbox.system.modules.cbstreams.models"><span class="label label-success">testbox.system.modules.cbstreams.models</span></a>
+</div>
+
+<h2>
+
+
+Class
+
+ Stream</h2>
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+	
+		
+		
+			
+		
+	
+	
+
+
+<!-- Inheritance Tree-->
+<pre style="background:white">lucee.Component
+    <img src="../../../../../resources/inherit.gif" alt="extended by ">testbox.system.modules.cbstreams.models.Stream
+</pre>
+
+
+
+	
+	
+
+
+
+
+
+
+
+<div id="class-hint">
+	<p>This is a transient class that models a Java Stream: https://docs.oracle.com/javase/8/docs/api/?java/util/stream/Stream.html</p>
+</div>
+
+
+<!-- Clas Attributes -->
+<div class="panel panel-info">
+	<div class="panel-heading"><strong>Class Attributes:</strong></div>
+		<div class="panel-body">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				synchronized
+				
+				: false
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				accessors
+				
+				: true
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+			
+			<li class="label label-danger label-annotations">
+				persistent
+				
+				: false
+				
+			</li>
+			&nbsp;
+			
+		
+			
+		
+			
+		
+		
+	</div>
+</div>
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="property_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="5">
+			<strong>Property Summary</strong>
+		</th>
+	</tr>
+	<tr class="info">
+		<th align="left">
+			<strong>type</strong>
+		</th>
+		<th align="left">
+			<strong>property</strong>
+		</th>
+		<th align="left">
+			<strong>default</strong>
+		</th>
+		<th align="left">
+			<strong>serializable</strong>
+		</th>
+		<th align="left">
+			<strong>required</strong>
+		</th>
+	</tr>
+
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#jStream()">jStream</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Java Stream we represent.
+			
+			<br><br>
+			<ul>
+			
+				
+			
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			
+				
+			
+				
+			
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#jType()">jType</A></strong>
+			<br>
+			
+			<!-- only grab the first sentence of the hint -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If this stream has a specific Java Type, defaults to "" or any.
+			
+			<br><br>
+			<ul>
+			
+				
+			
+				
+				<li class="label label-default label-annotations">access = public</li>
+				
+			
+				
+			
+				
+			
+				
+				<li class="label label-default label-annotations">returntype = any</li>
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+
+		</td>
+		<td align="right" valign="top" width="1%">
+			
+				<code>any</code>
+			
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				true
+			</code>
+		</td>
+		<td align="right" valign="top" width="1%">
+			<code>
+				false
+			</code>
+		</td>
+	</tr>
+	
+	</tr>
+</table>
+
+
+
+	
+	
+	<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+	<a name="constructor_summary"><!-- --></a>
+	<table class="table table-bordered table-hover">
+		<tr class="info">
+			<th align="left" colspan="2">
+				<strong>Constructor Summary</strong>
+			</th>
+		</tr>
+		<tr>
+			
+			<td>
+				<strong><a href="Stream.html#init()">init</A></strong>([any collection=''], [any isNumeric='false'], [any primitive=''])
+				<br>
+				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Construct a stream from an incoming collection.
+				
+			</td>
+		</tr>
+	</table>
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<a name="method_summary"><!-- --></a>
+<table class="table table-bordered table-hover">
+	<tr class="info">
+		<th align="left" colspan="2">
+			<strong>Method Summary</strong>
+		</th>
+	</tr>
+
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#allMatch()">allMatch</A></strong>(any predicate)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether all elements of this stream match the provided predicate.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#anyMatch()">anyMatch</A></strong>(any predicate)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether any elements of this stream match the provided predicate.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#average()">average</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an Optional describing the average of the elements of this stream, or a null if this stream is empty.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Builder.html" title="class in testbox.system.modules.cbstreams.models">Builder</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#builder()">builder</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a builder for a Stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#close()">close</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only use this method for closing streams that require IO resources.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#collect()">collect</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A mutable reduction operation that accumulates input elements into a mutable result container, optionally transforming the accumulated result into a final representation after all input elements have been processed.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#collectAsList()">collectAsList</A></strong>([any delimiter=','], [any prefix=''], [any suffix=''])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collect the items to a string list using delimiters and/or a prefix and suffix.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#collectAsStruct()">collectAsStruct</A></strong>(any keyID, any valueID, [boolean overwrite='true'])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collect the items to a struct.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#collectAverage()">collectAverage</A></strong>(any mapper, [any primitive='long'])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a Collector that produces the arithmetic mean of an integer-valued function applied to the input elements.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#collectGroupingBy()">collectGroupingBy</A></strong>(any classifier)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a Collector implementing a "group by" operation on input elements, grouping elements according to a.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#collectPartitioningBy()">collectPartitioningBy</A></strong>(any predicate)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a Collector which partitions the input elements according to a Predicate, and organizes them into a Map<Boolean, List<T>>.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#collectSum()">collectSum</A></strong>(any mapper, [any primitive='long'])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a Collector that produces the sum of a valued function applied to the input elements.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#collectSummary()">collectSummary</A></strong>(any mapper, [any primitive='long'], [boolean returnNative='false'])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a Collector which applies an producing mapping function to each input element, and.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#concat()">concat</A></strong>(any a, any b)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>numeric</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#count()">count</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the count of elements in this stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#createPrimitiveProxyFunction()">createPrimitiveProxyFunction</A></strong>(any f, any primitive)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a primitive typed proxy function.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#distinct()">distinct</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a stream consisting of the distinct elements (according to Object.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#empty()">empty</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an empty sequential Stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#filter()">filter</A></strong>(any predicate)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a stream consisting of the elements of this stream that match the given predicate.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#findAny()">findAny</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an Optional describing some element of the stream, or an empty Optional if the stream is empty.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#findFirst()">findFirst</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an Optional describing the first element of this stream, or an empty Optional if the stream is empty.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#forEach()">forEach</A></strong>(any action)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs an action for each element of this stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>void</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#forEachOrdered()">forEachOrdered</A></strong>(any action)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs an action for each element of this stream, in the encounter order of the stream if the stream has a defined encounter order.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#generate()">generate</A></strong>(any supplier)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an infinite sequential unordered stream where each element is generated by the provided Supplier.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#getJStream()">getJStream</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>string</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#getJType()">getJType</A></strong>()
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#getNativeStatsStruct()">getNativeStatsStruct</A></strong>(any stats)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build a stats structure from a Java SummaryStatistics Object.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#getStrongTypePrefix()">getStrongTypePrefix</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the strong type prefix for classes according to types.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#isParallel()">isParallel</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether this stream, if a terminal operation were to be executed, would execute in parallel.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>private&nbsp;boolean</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#isStrongTyped()">isStrongTyped</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if this stream is strong typed.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#iterator()">iterator</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an iterator for the elements of this stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#limit()">limit</A></strong>(numeric maxSize)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a stream consisting of the elements of this stream, truncated to be no longer than maxSize in length.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#map()">map</A></strong>(any mapper)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a stream consisting of the results of applying the given function to the elements of this stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#max()">max</A></strong>([any comparator])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an numeric describing the maximum element of this stream, or a null if this stream is empty.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#min()">min</A></strong>([any comparator])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an numeric describing the minimum element of this stream, or a null if this stream is empty.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>boolean</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#noneMatch()">noneMatch</A></strong>(any predicate)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether no elements of this stream match the provided predicate.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#of()">of</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a sequential ordered stream whose elements are the specified values.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#ofChars()">ofChars</A></strong>(string target)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a character stream from a string.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#ofFile()">ofFile</A></strong>(string path, [any encoding='UTF-8'])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a stream from a file.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#onClose()">onClose</A></strong>(any closeHandler)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an equivalent stream with an additional close handler.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#parallel()">parallel</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an equivalent stream that is parallel.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#peek()">peek</A></strong>(any action)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#range()">range</A></strong>(numeric start, numeric end)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a sequential ordered LongStream from start (inclusive) to end (exclusive) by an incremental step of 1.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#rangeClosed()">rangeClosed</A></strong>(numeric start, numeric end)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a sequential ordered LongStream from start (inclusive) to end (inclusive) by an incremental step of 1.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#reduce()">reduce</A></strong>(any accumulator, [any identity])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs a reduction on the elements of this stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#sequential()">sequential</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an equivalent stream that is sequential.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#setJStream()">setJStream</A></strong>(any jStream)
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#setJType()">setJType</A></strong>(any jType)
+			<br>
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#skip()">skip</A></strong>(numeric n)
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a stream consisting of the remaining elements of this stream after discarding the first n elements of the stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#sorted()">sorted</A></strong>([any comparator])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a stream consisting of the elements of this stream, sorted according to natural order.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#spliterator()">spliterator</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a spliterator for the elements of this stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>struct</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#summaryStatistics()">summaryStatistics</A></strong>([boolean returnNative='false'])
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a Summary describing various summary data about the elements in this stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code>any</code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#toArray()">toArray</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array containing the elements of this stream.
+			
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td align="right" valign="top" width="1%">
+			<code><a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a></code>
+		</td>
+		<td>
+			<strong><a href="Stream.html#unordered()">unordered</A></strong>()
+			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an equivalent stream that is unordered.
+			
+		</td>
+	</tr>
+	
+</table>
+
+
+
+<a name="inherited_methods"><!-- --></a>
+
+
+	
+
+	
+
+	&nbsp;
+	<a name="methods_inherited_from_class_lucee.Component"><!-- --></a>
+	<table class="table table-hover table-bordered">
+		<tr class="info">
+			<th align="left">
+				<strong>Methods inherited from class <kbd>lucee.Component</kbd></strong>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				
+				
+				
+
+				
+					<span class="label label-warning"><em>None</em></span>
+				
+			</td>
+		</tr>
+	</table>
+
+
+<hr>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+	<a name="constructor_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Constructor Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	<a name="init()"><!-- --></a><h3>
+	init</h3>
+	<kbd>public <strong>init</strong>([any collection=''], [any isNumeric='false'], [any primitive=''])</kbd>
+
+	<br><br>
+
+	
+	<p>Construct a stream from an incoming collection.  The supported types are:
+structs, arrays, lists, and strings.  You can also strong type the stream according to the <source>predicate</source> argument.
+This is useful when doing mathematical operations on the stream.</p>
+	
+
+	
+	<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+			<dd><code>collection</code> - This is an optional collection to build a stream on: List, Array, Struct, Query</dd>
+		
+			<dd><code>isNumeric</code> - This is a shorthand for doing a numeric typed array of values. This will choose a long stream for you by default.</dd>
+		
+			<dd><code>primitive</code> - If you will be doing operations on the stream, you can mark it with a primitive type of: int, long or double. Else we will use generic object streams</dd>
+		
+	</dl>
+	
+	<hr>
+
+
+<!-- ============ PROPERTY DETAIL ========== -->
+
+	<a name="property_detail"><!-- --></a>
+	<table class="table table-bordered">
+		<tr class="info">
+			<th colspan="1" align="left">
+				<strong>Property Detail</strong>
+			</th>
+		</tr>
+	</table>
+
+	
+		
+		<a name="jStream()"><!-- --></a>
+		<h3>jStream</h3>
+
+		<kbd>
+			property any
+			<strong>jStream</strong>
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>The Java Stream we represent</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			
+		
+			
+			<dd><code>access</code> - public</dd>
+			
+		
+			
+			<dd><code>required</code> - false</dd>
+			
+		
+			
+		
+			
+			<dd><code>returntype</code> - any</dd>
+			
+		
+			
+		
+			
+		
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		
+		</dl>
+
+		<hr>
+	
+		
+		<a name="jType()"><!-- --></a>
+		<h3>jType</h3>
+
+		<kbd>
+			property any
+			<strong>jType</strong>
+			
+			= [any]
+			
+		</kbd>
+
+		<br><br>
+		
+			<p>If this stream has a specific Java Type, defaults to "" or any</p>
+		
+
+		<dl>
+		<dt><strong>Attributes:</strong></dt>
+		
+			
+		
+			
+			<dd><code>access</code> - public</dd>
+			
+		
+			
+			<dd><code>required</code> - false</dd>
+			
+		
+			
+		
+			
+			<dd><code>returntype</code> - any</dd>
+			
+		
+			
+		
+			
+		
+			
+			<dd><code>serializable</code> - true</dd>
+			
+		
+		</dl>
+
+		<hr>
+	
+
+
+
+
+
+
+
+
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<a name="method_detail"><!-- --></a>
+<table class="table table-bordered">
+	<tr class="info">
+		<th colspan="1" align="left">
+			<strong>Method Detail</strong>
+		</th>
+	</tr>
+</table>
+
+
+	
+	<a name="allMatch()"><!-- --></a>
+	<h3>
+		allMatch
+		
+	</h3>
+
+	<kbd>public boolean <strong>allMatch</strong>(any predicate)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns whether all elements of this stream match the provided predicate.
+May not evaluate the predicate on all elements if not necessary for determining the result.
+If the stream is empty then true is returned and the predicate is not evaluated.
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>predicate</code> - a non-interfering, stateless predicate to apply to elements of this stream</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="anyMatch()"><!-- --></a>
+	<h3>
+		anyMatch
+		
+	</h3>
+
+	<kbd>public boolean <strong>anyMatch</strong>(any predicate)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns whether any elements of this stream match the provided predicate.
+May not evaluate the predicate on all elements if not necessary for determining the result.
+If the stream is empty then false is returned and the predicate is not evaluated.
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>predicate</code> - a non-interfering, stateless predicate to apply to elements of this stream</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="average()"><!-- --></a>
+	<h3>
+		average
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>average</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an Optional describing the average of the elements of this stream, or a null if this stream is empty.
+This can only be done with int, long, or double typed streams
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="builder()"><!-- --></a>
+	<h3>
+		builder
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Builder.html" title="class in testbox.system.modules.cbstreams.models">Builder</a> <strong>builder</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a builder for a Stream. So you can build a stream manually by calling on the builder's <code>add()</code> method.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="close()"><!-- --></a>
+	<h3>
+		close
+		
+	</h3>
+
+	<kbd>public void <strong>close</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Only use this method for closing streams that require IO resources</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="collect()"><!-- --></a>
+	<h3>
+		collect
+		
+	</h3>
+
+	<kbd>public any <strong>collect</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>A mutable reduction operation that accumulates input elements into a mutable result container, optionally transforming the accumulated result into a final representation after all input elements have been processed.
+By default we will collect to an array.
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="collectAsList()"><!-- --></a>
+	<h3>
+		collectAsList
+		
+	</h3>
+
+	<kbd>public any <strong>collectAsList</strong>([any delimiter=','], [any prefix=''], [any suffix=''])</kbd>
+
+	<br><br>
+
+	
+		<p>Collect the items to a string list using delimiters and/or a prefix and suffix.
+The cool things is that you don't even need to know the start or end of the stream for applying the prefix and suffix
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>delimiter</code> - The delimiter to use in the list. The default is a comma (,)</dd>
+		
+		<dd><code>prefix</code> - A prefix to add to the stream result</dd>
+		
+		<dd><code>suffix</code> - A suffix to add to the stream result</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="collectAsStruct()"><!-- --></a>
+	<h3>
+		collectAsStruct
+		
+	</h3>
+
+	<kbd>public any <strong>collectAsStruct</strong>(any keyID, any valueID, [boolean overwrite='true'])</kbd>
+
+	<br><br>
+
+	
+		<p>Collect the items to a struct. Please be sure to map the appropriate key and value identifiers
+NOTE: the struct type will only work if the collection we are collecting is a struct or an object
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>keyID</code> - If using struct, then we need to know what will be the key value in the collection struct</dd>
+		
+		<dd><code>valueID</code> - If using struct, then we need to know what will be the value key in the collection struct</dd>
+		
+		<dd><code>overwrite</code> - If using struct, then do you overwrite elements if the same key id is found. Defaults is true.</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="collectAverage()"><!-- --></a>
+	<h3>
+		collectAverage
+		
+	</h3>
+
+	<kbd>public any <strong>collectAverage</strong>(any mapper, [any primitive='long'])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a Collector that produces the arithmetic mean of an integer-valued function applied to the input elements.
+If no elements are present, the result is 0.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mapper</code> - The mapper lambda or closure to determine averages on</dd>
+		
+		<dd><code>primitive</code> - The primitive type to cast with, we default to 'long'. Accepted values are int, long, double</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="collectGroupingBy()"><!-- --></a>
+	<h3>
+		collectGroupingBy
+		
+	</h3>
+
+	<kbd>public any <strong>collectGroupingBy</strong>(any classifier)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a Collector implementing a "group by" operation on input elements, grouping elements according to a
+classification function, and returning the results in a struct according to the classifier function</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>classifier</code> - the classifier function mapping input elements to keys</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="collectPartitioningBy()"><!-- --></a>
+	<h3>
+		collectPartitioningBy
+		
+	</h3>
+
+	<kbd>public any <strong>collectPartitioningBy</strong>(any predicate)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a Collector which partitions the input elements according to a Predicate, and organizes them into a Map<Boolean, List<T>>.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>predicate</code> - a non-interfering, stateless predicate to apply to each element to determine if it should be included</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="collectSum()"><!-- --></a>
+	<h3>
+		collectSum
+		
+	</h3>
+
+	<kbd>public any <strong>collectSum</strong>(any mapper, [any primitive='long'])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a Collector that produces the sum of a valued function applied to the input elements.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mapper</code> - The mapper lambda or closure to determine the sum on</dd>
+		
+		<dd><code>primitive</code> - The primitive type to cast with, we default to 'long'. Accepted values are int, long, double</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="collectSummary()"><!-- --></a>
+	<h3>
+		collectSummary
+		
+	</h3>
+
+	<kbd>public any <strong>collectSummary</strong>(any mapper, [any primitive='long'], [boolean returnNative='false'])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a Collector which applies an producing mapping function to each input element, and
+returns summary statistics for the resulting values as a struct with the following keys:
+average, count, max, min, sum.  You can also get the raw stats report by using the <code>returnNative</code> argument.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mapper</code> - The mapper lambda or closure to determine the statistics on</dd>
+		
+		<dd><code>primitive</code> - The primitive type to cast with, we default to 'long'. Accepted values are int, long, double</dd>
+		
+		<dd><code>returnNative</code> - If true, this will return the SummaryStatistics object instead of the struct report.</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>By default a struct with {average,count,max,min,sum}.</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="concat()"><!-- --></a>
+	<h3>
+		concat
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>concat</strong>(any a, any b)</kbd>
+
+	<br><br>
+
+	
+		<p>Creates a lazily concatenated stream whose elements are all the elements of the first stream followed by all the elements of
+the second stream. The resulting stream is ordered if both of the input streams are ordered, and parallel if either of the
+input streams is parallel. When the resulting stream is closed, the close handlers for both input streams are invoked.
+Use caution when constructing streams from repeated concatenation. Accessing an element of a deeply concatenated stream can result in deep call chains, or even StackOverflowException.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>a</code> - the first stream</dd>
+		
+		<dd><code>b</code> - the second stream</dd>
+		
+		</dl>
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>the concatenation of the two input streams</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="count()"><!-- --></a>
+	<h3>
+		count
+		
+	</h3>
+
+	<kbd>public numeric <strong>count</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns the count of elements in this stream.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="createPrimitiveProxyFunction()"><!-- --></a>
+	<h3>
+		createPrimitiveProxyFunction
+		
+	</h3>
+
+	<kbd>private any <strong>createPrimitiveProxyFunction</strong>(any f, any primitive)</kbd>
+
+	<br><br>
+
+	
+		<p>Create a primitive typed proxy function</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>f</code> - The target closure or lambda</dd>
+		
+		<dd><code>primitive</code> - The target primitive</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="distinct()"><!-- --></a>
+	<h3>
+		distinct
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>distinct</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a stream consisting of the distinct elements (according to Object.equals(Object)) of this stream.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="empty()"><!-- --></a>
+	<h3>
+		empty
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>empty</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an empty sequential Stream.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="filter()"><!-- --></a>
+	<h3>
+		filter
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>filter</strong>(any predicate)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a stream consisting of the elements of this stream that match the given predicate.
+This is an intermediate operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>predicate</code> - a non-interfering, stateless predicate to apply to each element to determine if it should be included</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="findAny()"><!-- --></a>
+	<h3>
+		findAny
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>findAny</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an Optional describing some element of the stream, or an empty Optional if the stream is empty.
+This is a short-circuiting terminal operation.
+The behavior of this operation is explicitly nondeterministic; it is free to select any element in the stream. This is to allow for maximal performance in parallel operations; the cost is that multiple invocations on the same source may not return the same result. (If a stable result is desired, use findFirst() instead.)</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>an Optional describing some element of this stream, or an empty Optional if the stream is empty</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="findFirst()"><!-- --></a>
+	<h3>
+		findFirst
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>findFirst</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an Optional describing the first element of this stream, or an empty Optional if the stream is empty. If the stream has no encounter order, then any element may be returned.
+This is a short-circuiting terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>an Optional describing the first element of this stream, or an empty Optional if the stream is empty. If the stream has no encounter order, then any element may be returned.</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="forEach()"><!-- --></a>
+	<h3>
+		forEach
+		
+	</h3>
+
+	<kbd>public void <strong>forEach</strong>(any action)</kbd>
+
+	<br><br>
+
+	
+		<p>Performs an action for each element of this stream.
+This is a terminal operation.
+The behavior of this operation is explicitly nondeterministic. For parallel stream pipelines, this operation does not guarantee to respect the encounter order of the stream, as doing so would sacrifice the benefit of parallelism. For any given element, the action may be performed at whatever time and in whatever thread the library chooses. If the action accesses shared state, it is responsible for providing the required synchronization.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>action</code> - a non-interfering action to perform on the elements</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="forEachOrdered()"><!-- --></a>
+	<h3>
+		forEachOrdered
+		
+	</h3>
+
+	<kbd>public void <strong>forEachOrdered</strong>(any action)</kbd>
+
+	<br><br>
+
+	
+		<p>Performs an action for each element of this stream, in the encounter order of the stream if the stream has a defined encounter order.
+This is a terminal operation.
+This operation processes the elements one at a time, in encounter order if one exists. Performing the action for one element happens-before performing the action for subsequent elements, but for any given element, the action may be performed in whatever thread the library chooses.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>action</code> - a non-interfering action to perform on the elements</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="generate()"><!-- --></a>
+	<h3>
+		generate
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>generate</strong>(any supplier)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an infinite sequential unordered stream where each element is generated by the provided Supplier.
+This is suitable for generating constant streams, streams of random elements, etc. Please make sure you limit
+your stream or this method will work until it reaches the memory limit. Use the <code>limit()</code></p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>supplier</code> - A closure or lambda that will supply the generated elements</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getJStream()"><!-- --></a>
+	<h3>
+		getJStream
+		
+	</h3>
+
+	<kbd>public string <strong>getJStream</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getJType()"><!-- --></a>
+	<h3>
+		getJType
+		
+	</h3>
+
+	<kbd>public string <strong>getJType</strong>()</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getNativeStatsStruct()"><!-- --></a>
+	<h3>
+		getNativeStatsStruct
+		
+	</h3>
+
+	<kbd>private any <strong>getNativeStatsStruct</strong>(any stats)</kbd>
+
+	<br><br>
+
+	
+		<p>Build a stats structure from a Java SummaryStatistics Object</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>stats</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="getStrongTypePrefix()"><!-- --></a>
+	<h3>
+		getStrongTypePrefix
+		
+	</h3>
+
+	<kbd>private any <strong>getStrongTypePrefix</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Return the strong type prefix for classes according to types</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="isParallel()"><!-- --></a>
+	<h3>
+		isParallel
+		
+	</h3>
+
+	<kbd>public boolean <strong>isParallel</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns whether this stream, if a terminal operation were to be executed, would execute in parallel. Calling this method after invoking an terminal stream operation method may yield unpredictable results.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="isStrongTyped()"><!-- --></a>
+	<h3>
+		isStrongTyped
+		
+	</h3>
+
+	<kbd>private boolean <strong>isStrongTyped</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Check if this stream is strong typed</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="iterator()"><!-- --></a>
+	<h3>
+		iterator
+		
+	</h3>
+
+	<kbd>public any <strong>iterator</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an iterator for the elements of this stream.
+This is an terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="limit()"><!-- --></a>
+	<h3>
+		limit
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>limit</strong>(numeric maxSize)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a stream consisting of the elements of this stream, truncated to be no longer than maxSize in length.
+Please see warnings for parallel streams: https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#limit-long-</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>maxSize</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="map()"><!-- --></a>
+	<h3>
+		map
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>map</strong>(any mapper)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a stream consisting of the results of applying the given function to the elements of this stream.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>mapper</code> - The closure or lambda to map apply to each element</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="max()"><!-- --></a>
+	<h3>
+		max
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>max</strong>([any comparator])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an numeric describing the maximum element of this stream, or a null if this stream is empty.
+This can only be done with int, long, or double typed streams unless you pass in a
+Comparator function or lambda: (a,b) => return 0, +- value
+This is a terminal operation.
+obj1 and obj2 are the objects to be compared. This method returns zero if the objects are equal. It returns a positive value if obj1 is greater than obj2. Otherwise, a negative value is returned.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>comparator</code> - A comparator function or lambda</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="min()"><!-- --></a>
+	<h3>
+		min
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Optional.html" title="class in testbox.system.modules.cbstreams.models">Optional</a> <strong>min</strong>([any comparator])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an numeric describing the minimum element of this stream, or a null if this stream is empty.
+This can only be done with int, long, or double typed streams unless you pass in a
+Comparator function or lambda: (a,b) => return 0, +- value
+This is a terminal operation.
+obj1 and obj2 are the objects to be compared. This method returns zero if the objects are equal. It returns a positive value if obj1 is greater than obj2. Otherwise, a negative value is returned.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>comparator</code> - A comparator function or lambda</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="noneMatch()"><!-- --></a>
+	<h3>
+		noneMatch
+		
+	</h3>
+
+	<kbd>public boolean <strong>noneMatch</strong>(any predicate)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns whether no elements of this stream match the provided predicate.
+May not evaluate the predicate on all elements if not necessary for determining the result.
+If the stream is empty then true is returned and the predicate is not evaluated.
+This is a short-cicuiting terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>predicate</code> - a non-interfering, stateless predicate to apply to elements of this stream</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="of()"><!-- --></a>
+	<h3>
+		of
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>of</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a sequential ordered stream whose elements are the specified values.
+Each argument passed to this function will generate the stream from.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="ofChars()"><!-- --></a>
+	<h3>
+		ofChars
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>ofChars</strong>(string target)</kbd>
+
+	<br><br>
+
+	
+		<p>Create a character stream from a string
+This won't work on ACF11 due to stupidity</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>target</code> - The string to convert to a stream using its characters</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="ofFile()"><!-- --></a>
+	<h3>
+		ofFile
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>ofFile</strong>(string path, [any encoding='UTF-8'])</kbd>
+
+	<br><br>
+
+	
+		<p>Create a stream from a file. Every line of the text becomes an element of the stream:</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>path</code> - The absolute path of the file to generate a stream from</dd>
+		
+		<dd><code>encoding</code> - The encoding of the file, the default is `UTF-8`</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="onClose()"><!-- --></a>
+	<h3>
+		onClose
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>onClose</strong>(any closeHandler)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an equivalent stream with an additional close handler.
+Close handlers are run when the close() method is called on the stream, and are executed in the order they were added.
+All close handlers are run, even if earlier close handlers throw exceptions. If any close handler throws an exception,
+the first exception thrown will be relayed to the caller of close(), with any remaining exceptions added to that
+exception as suppressed exceptions (unless one of the remaining exceptions is the same exception as the first exception,
+since an exception cannot suppress itself.) May return itself.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>closeHandler</code> - A lambda,closure or a CFC that implements a <code>run()</code> method. to be executed when the stream is closed.</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="parallel()"><!-- --></a>
+	<h3>
+		parallel
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>parallel</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an equivalent stream that is parallel. May return itself, either because the stream was already parallel, or because the underlying stream state was modified to be parallel.
+This is an intermediate operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="peek()"><!-- --></a>
+	<h3>
+		peek
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>peek</strong>(any action)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream.
+This is an intermediate operation.
+For parallel stream pipelines, the action may be called at whatever time and in whatever thread the element is made available by the upstream operation. If the action modifies shared state, it is responsible for providing the required synchronization.
+This method exists mainly to support debugging, where you want to see the elements as they flow past a certain point in a pipeline:
+<pre>
+Stream.of("one", "two", "three", "four")
+.filter( (e) +> e.len() > 3 )
+.peek( (e) => SystemOutput( "Filtered value: " & e, true ) )
+.map( (item) => item.toUpperCase() )
+.peek( (e) => SystemOutput( "Mapped value: " & e, true ) )
+.collect();
+</pre></p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>action</code> - a non-interfering action to perform on the elements as they are consumed from the stream lambda or closure</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="range()"><!-- --></a>
+	<h3>
+		range
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>range</strong>(numeric start, numeric end)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a sequential ordered LongStream from start (inclusive) to end (exclusive) by an incremental step of 1.
+See https://docs.oracle.com/javase/8/docs/api/java/util/stream/LongStream.html</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>start</code></dd>
+		
+		<dd><code>end</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="rangeClosed()"><!-- --></a>
+	<h3>
+		rangeClosed
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>rangeClosed</strong>(numeric start, numeric end)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a sequential ordered LongStream from start (inclusive) to end (inclusive) by an incremental step of 1.
+See https://docs.oracle.com/javase/8/docs/api/java/util/stream/LongStream.html</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>start</code></dd>
+		
+		<dd><code>end</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="reduce()"><!-- --></a>
+	<h3>
+		reduce
+		
+	</h3>
+
+	<kbd>public any <strong>reduce</strong>(any accumulator, [any identity])</kbd>
+
+	<br><br>
+
+	
+		<p>Performs a reduction on the elements of this stream.
+This function can run the reduction in 2 modes:
+1 - Accumulation only: Using the accumulation function, and returns the reduced value, if any inside an Optional
+2 - Accumulation with identity value: Performs a reduction on the elements of this stream, using the provided identity or starting value and an associative accumulation function, and returns the reduced value. NOT AN OPTIONAL
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>accumulator</code> - an associative, non-interfering, stateless function for combining two values</dd>
+		
+		<dd><code>identity</code> - the identity value for the accumulating function. If not used, then the accumulator is used in isolation</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="sequential()"><!-- --></a>
+	<h3>
+		sequential
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>sequential</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an equivalent stream that is sequential. May return itself, either because the stream was already sequential, or because the underlying stream state was modified to be sequential.
+This is an intermediate operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="setJStream()"><!-- --></a>
+	<h3>
+		setJStream
+		
+	</h3>
+
+	<kbd>public any <strong>setJStream</strong>(any jStream)</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>jStream</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="setJType()"><!-- --></a>
+	<h3>
+		setJType
+		
+	</h3>
+
+	<kbd>public any <strong>setJType</strong>(any jType)</kbd>
+
+	<br><br>
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>jType</code></dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="skip()"><!-- --></a>
+	<h3>
+		skip
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>skip</strong>(numeric n)</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a stream consisting of the remaining elements of this stream after discarding the first n elements of the stream. If this stream contains fewer than n elements then an empty stream will be returned.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>n</code> - the number of leading elements to skip</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="sorted()"><!-- --></a>
+	<h3>
+		sorted
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>sorted</strong>([any comparator])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a stream consisting of the elements of this stream, sorted according to natural order.
+You can pass in a lambda or closure to create your own Comparator.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>comparator</code> - A lambda or closure to apply as a comparator when sorting.</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="spliterator()"><!-- --></a>
+	<h3>
+		spliterator
+		
+	</h3>
+
+	<kbd>public any <strong>spliterator</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a spliterator for the elements of this stream.
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html</dd>
+		</dl>
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="summaryStatistics()"><!-- --></a>
+	<h3>
+		summaryStatistics
+		
+	</h3>
+
+	<kbd>public struct <strong>summaryStatistics</strong>([boolean returnNative='false'])</kbd>
+
+	<br><br>
+
+	
+		<p>Returns a Summary describing various summary data about the elements in this stream.
+By default we return a struct with the following stats: average, count, max, min, and sum.
+This is a terminal operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+		<dl>
+		<dt><strong>Parameters:</strong></dt>
+		
+		<dd><code>returnNative</code> - If true, then we will return the native Java object, else a struct of stats</dd>
+		
+		</dl>
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="toArray()"><!-- --></a>
+	<h3>
+		toArray
+		
+	</h3>
+
+	<kbd>public any <strong>toArray</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an array containing the elements of this stream.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+	
+	<a name="unordered()"><!-- --></a>
+	<h3>
+		unordered
+		
+	</h3>
+
+	<kbd>public <a href="../../../../../testbox/system/modules/cbstreams/models/Stream.html" title="class in testbox.system.modules.cbstreams.models">Stream</a> <strong>unordered</strong>()</kbd>
+
+	<br><br>
+
+	
+		<p>Returns an equivalent stream that is unordered. May return itself, either because the stream was already unordered, or because the underlying stream state was modified to be unordered.
+This is an intermediate operation.</p>
+	
+
+	
+
+	
+		
+		
+	
+
+	
+	
+
+	
+
+	
+
+	
+
+	</dl>
+	<hr>
+
+
+
+
+</body>
+</html>
+
