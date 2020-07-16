@@ -10,6 +10,8 @@ This action will run a CommandBox server using the CFML engine of your choice an
 
 ## Example usage
 
+```
 uses: coldfumonkeh/cfml-testbox-action@v1
 with:
   cfml-engine: 'adobe@2018'
+```
