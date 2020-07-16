@@ -13,4 +13,4 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          cfml-engine: 'adobe@18'
+          cfml-engine: 'adobe@2018'
