@@ -1,16 +1,16 @@
 on: [push]
 
 jobs:
-    job:
-        runs-on: ubuntu-latest
-        name: A job to test some code
-        steps:
-        - run: |
-            echo Starting the build
-            curl --location -o /tmp/box.zip https://www.ortussolutions.com/parent/download/commandbox/type/bin
-            unzip /tmp/box.zip -d /tmp/
-            chmod a+x /tmp/box
-            /tmp/box install production=false
-            /tmp/box server start cfengine=lucee@4
-            mkdir /tmp/results/
-            /tmp/box testbox run outputFile=testbox-lucee4.xml reporter=junit
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: CFML Testing Test
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Hello world action step
+        uses: ./ # Uses an action in the root directory
+        id: hello
+        with:
+          cfml-engine: 'adobe@10'

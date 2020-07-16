@@ -1,16 +1,13 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'CFML Unit Tests'
+description: 'Run CFML unit tests using TestBox'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  cfml-engine:  # id of input
+    description: 'The CFML engine to test against'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 'lucee@5'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.cfml-engine }}
