@@ -1,16 +1,14 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  cfml_testbox_test_runner:
     runs-on: ubuntu-latest
-    name: CFML Testing Test
+    name: CFML TestBox
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
-        id: hello
+      - name: CFML TestBox Test Runner
+        id: cfml_testbox_test_runner
+        uses: actions/cfml-testbox-action@v1
         with:
           cfml-engine: 'adobe@2018'

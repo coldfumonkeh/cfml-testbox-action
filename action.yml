@@ -1,5 +1,5 @@
 # action.yml
-name: 'CFML Unit Tests'
+name: 'CFML TestBox Test Runner'
 description: 'Run CFML unit tests using TestBox'
 inputs:
   cfml-engine:  # id of input
